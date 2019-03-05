@@ -54,11 +54,11 @@ header a, footer a {
   padding: 0 14px;
 }
 
-/*footer a {
-	font-size: 16px;
+footer a {
+  font-size: 16px;
 }
 
-footer a:not(:last-child) {
+/*footer a:not(:last-child) {
 	border-right: 2px dashed #c9cfd4;
 }
 
