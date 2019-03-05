@@ -245,15 +245,15 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*pre code.hljs {
-	padding: 15px;
-	border-radius: 5px;
-	overflow: scroll;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+pre code .hljs {
+  padding: 15px;
+  border-radius: 5px;
+  overflow: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#open-modal, #close-modal {
+/*#open-modal, #close-modal {
 	cursor: pointer;
 }
 
