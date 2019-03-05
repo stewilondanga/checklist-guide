@@ -169,11 +169,11 @@ h4 {
   color: #03a9f4;
 }
 
-/*.checkbox.green:hover [data-icon] {
-	color: #66ef90;
+.checkbox.green:hover [data-icon] {
+  color: #66ef90;
 }
 
-.checkbox.green:hover,
+/*.checkbox.green:hover,
 .checkbox.green.checked,
 .checkbox.green.checked [data-icon] {
 	color: #03d343;
