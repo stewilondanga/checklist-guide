@@ -213,12 +213,12 @@ h4 {
   overflow: scroll;
 }
 
-/*#modal-wrapper ol {
-	list-style: none;
-	counter-reset: item;
+#modal-wrapper ol {
+  list-style: none;
+  counter-reset: item;
 }
 
-#modal-wrapper li {
+/*#modal-wrapper li {
 	counter-increment: item;
 	margin-bottom: 5px;
 	position: relative;
