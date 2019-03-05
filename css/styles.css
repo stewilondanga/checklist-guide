@@ -218,13 +218,13 @@ h4 {
   counter-reset: item;
 }
 
-/*#modal-wrapper li {
-	counter-increment: item;
-	margin-bottom: 5px;
-	position: relative;
+#modal-wrapper li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  position: relative;
 }
 
-#modal-wrapper li:before {
+/*#modal-wrapper li:before {
 	content: counter(item);
 	background: #339af0;
 	border-radius: 100%;
