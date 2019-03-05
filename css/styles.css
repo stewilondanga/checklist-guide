@@ -253,11 +253,11 @@ pre code .hljs {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*#open-modal, #close-modal {
-	cursor: pointer;
+#open-modal, #close-modal {
+  cursor: pointer;
 }
 
-#close-modal {
+/*#close-modal {
 	display: flex;
 	height: 36px;
 	width: 36px;
