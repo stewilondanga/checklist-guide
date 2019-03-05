@@ -111,17 +111,17 @@ h1 {
   color: #ff7502;
 }
 
-/*h2 {
-	margin-bottom: 16px;
-	font-size: 18px;
-	color: #90a4ae;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	font-weight: 800;
-	white-space: nowrap;
+h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #90a4ae;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
-h4 {
+/*h4 {
 	font-size: 20px;
 	font-weight: 700;
 	color: #51646e;
