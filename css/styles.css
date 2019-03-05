@@ -203,17 +203,17 @@ h4 {
   background: #fff;
 }
 
-/*#modal-inner {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: calc(32px + 1vw);
-	overflow: scroll;
+#modal-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: calc(32px + 1vw);
+  overflow: scroll;
 }
 
-#modal-wrapper ol {
+/*#modal-wrapper ol {
 	list-style: none;
 	counter-reset: item;
 }
