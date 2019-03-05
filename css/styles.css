@@ -4,6 +4,14 @@
   }
 }
 
+body {
+  padding: 64px 15px 15px;
+  font-family: "Nunito", arial;
+  font-weight: 600;
+  color: #455a64;
+  background-color: #f1f3f5;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -28,13 +36,6 @@
 }
 
 
-body {
-	padding: 64px 15px 15px;
-	font-family: "Nunito", arial;
-	font-weight: 600;
-	color: #455a64;
-	background-color: #f1f3f5;
-}
 
 a {
 	color: #adb5bd;
