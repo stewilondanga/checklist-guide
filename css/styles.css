@@ -37,11 +37,11 @@ a:hover {
   text-decoration: none;
 }
 
-/*header, footer {
-	text-align: center;
+header, footer {
+  text-align: center;
 }
 
-header {
+/*header {
 	margin-bottom: 32px;
 }
 
