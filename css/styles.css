@@ -144,13 +144,13 @@ h4 {
   padding-left: 35px;
 }
 
-/*.checkbox input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.row.lists [data-icon] {
+/*.row.lists [data-icon] {
 	position: absolute;
 	top: 2px;
 	left: 0;
