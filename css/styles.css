@@ -75,16 +75,16 @@ footer [data-icon], #open-modal-top [data-icon] {
   box-sizing: content-box;
 }
 
-/*.container {
-	position: relative;
-	padding: 64px 15px;
-	background-color: #fff;
-	border-radius: .25rem;
-	box-shadow: 0 5px 10px rgba(0,0,0,.05);
-	overflow: hidden;
+.container {
+  position: relative;
+  padding: 64px 15px;
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+  overflow: hidden;
 }
 
-.container:before, #modal-inner:before, .container:after {
+/*.container:before, #modal-inner:before, .container:after {
 	content: " ";
 	position: absolute;
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1580009/confetti.svg?vsn=d);
