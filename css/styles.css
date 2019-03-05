@@ -253,6 +253,10 @@ pre code .hljs {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hljs-subst{
+  color: black;
+}
+
 #open-modal, #close-modal {
   cursor: pointer;
 }
