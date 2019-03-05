@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -21,11 +27,6 @@
   height: 1.5em;
 }
 
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px !important;
-	}
-}
 
 body {
 	padding: 64px 15px 15px;
