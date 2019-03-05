@@ -103,11 +103,11 @@ footer [data-icon], #open-modal-top [data-icon] {
   bottom: 0;
 }
 
-/*.row + .row [class*="col-"] {
-	padding: 32px;
+.row+.row [class*="col-"] {
+  padding: 32px;
 }
 
-h1 { color: #ff7502; }
+/*h1 { color: #ff7502; }
 
 h2 {
 	margin-bottom: 16px;
