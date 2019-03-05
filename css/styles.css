@@ -66,11 +66,11 @@ header [data-icon], footer [data-icon] {
   box-sizing: content-box;
 }
 
-/*header [data-icon] {
-	padding-right: 12px;
+header [data-icon] {
+  padding-right: 12px;
 }
 
-footer [data-icon], #open-modal-top [data-icon] {
+/*footer [data-icon], #open-modal-top [data-icon] {
 	padding-right: 8px;
 	box-sizing: content-box;
 }
