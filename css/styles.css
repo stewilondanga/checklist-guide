@@ -121,15 +121,15 @@ h2 {
   white-space: nowrap;
 }
 
-/*h4 {
-	font-size: 20px;
-	font-weight: 700;
-	color: #51646e;
-	text-transform: uppercase;
-	letter-spacing: 3px;
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #51646e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.checkbox {
+/*.checkbox {
 	display: block;
 	position: relative;
 	padding-left: 32px;
