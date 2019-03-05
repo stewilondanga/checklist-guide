@@ -99,9 +99,11 @@ footer [data-icon], #open-modal-top [data-icon] {
   top: 0;
 }
 
-/*.container:after { bottom: 0; }
+.container:after {
+  bottom: 0;
+}
 
-.row + .row [class*="col-"] {
+/*.row + .row [class*="col-"] {
 	padding: 32px;
 }
 
