@@ -41,11 +41,11 @@ header, footer {
   text-align: center;
 }
 
-/*header {
-	margin-bottom: 32px;
+header {
+  margin-bottom: 32px;
 }
 
-footer {
+/*footer {
 	margin-top: 24px;
 }
 
