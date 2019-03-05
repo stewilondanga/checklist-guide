@@ -129,18 +129,18 @@ h4 {
   letter-spacing: 3px;
 }
 
-/*.checkbox {
-	display: block;
-	position: relative;
-	padding-left: 32px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 22px;
-	user-select: none;
-	transition: padding-left 0.15s ease-in-out;
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  transition: padding-left 0.15s ease-in-out;
 }
 
-.checkbox:hover {
+/*.checkbox:hover {
 	padding-left: 35px;
 }
 
