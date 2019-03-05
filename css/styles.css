@@ -191,19 +191,19 @@ h4 {
   background-color: rgba(241, 243, 245, 0.85);
 }
 
-/*#modal {
-	display: block;
-	position: relative;
-	width: 90vw;
-	max-width: 900px;
-	height: 90vh;
-	overflow: visible;
-	border-radius: .25rem;
-	box-shadow: 0 5px 10px rgba(0,0,0,.05);
-	background: #fff;
+#modal {
+  display: block;
+  position: relative;
+  width: 90vw;
+  max-width: 900px;
+  height: 90vh;
+  overflow: visible;
+  border-radius: .25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+  background: #fff;
 }
 
-#modal-inner {
+/*#modal-inner {
 	position: absolute;
 	top: 0;
 	left: 0;
