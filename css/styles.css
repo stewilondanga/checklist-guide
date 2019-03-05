@@ -32,12 +32,12 @@ a {
   text-decoration: none;
 }
 
-/*a:hover {
-	color: #339af0;
-	text-decoration: none;
+a:hover {
+  color: #339af0;
+  text-decoration: none;
 }
 
-header, footer {
+/*header, footer {
 	text-align: center;
 }
 
