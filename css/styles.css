@@ -58,11 +58,11 @@ footer a {
   font-size: 16px;
 }
 
-/*footer a:not(:last-child) {
-	border-right: 2px dashed #c9cfd4;
+footer a:not(:last-child) {
+  border-right: 2px dashed #c9cfd4;
 }
 
-header [data-icon], footer [data-icon] {
+/*header [data-icon], footer [data-icon] {
 	box-sizing: content-box;
 }
 
