@@ -95,8 +95,11 @@ footer [data-icon], #open-modal-top [data-icon] {
   left: 0;
 }
 
-/*.container:before, #modal-inner:before { top: 0; }
-.container:after { bottom: 0; }
+.container:before, #modal-inner:before {
+  top: 0;
+}
+
+/*.container:after { bottom: 0; }
 
 .row + .row [class*="col-"] {
 	padding: 32px;
