@@ -45,11 +45,11 @@ header {
   margin-bottom: 32px;
 }
 
-/*footer {
-	margin-top: 24px;
+footer {
+  margin-top: 24px;
 }
 
-header a, footer a {
+/*header a, footer a {
 	display: inline-block;
 	padding: 0 14px;
 }
