@@ -257,27 +257,27 @@ pre code .hljs {
   cursor: pointer;
 }
 
-/*#close-modal {
-	display: flex;
-	height: 36px;
-	width: 36px;
-	background: #ef272f;
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	transform: translate(50%, -50%) scale(1.001);
-	z-index: 999;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	font-size: 22px;
-	color: #fff;
-	box-shadow: 0 5px 10px -3px rgba(255, 255, 255,.5), 0 5px 10px -3px rgba(0, 0, 0,.5);
-	transition: all 0.1s ease-in-out;
+#close-modal {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  background: #ef272f;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%) scale(1.001);
+  z-index: 999;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  box-shadow: 0 5px 10px -3px rgba(255, 255, 255, .5), 0 5px 10px -3px rgba(0, 0, 0, .5);
+  transition: all 0.1s ease-in-out;
 }
 
-#close-modal:hover {
+/*#close-modal:hover {
 	transform: translate(50%, -50%) scale(1.15);
 }
 
