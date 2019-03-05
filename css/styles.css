@@ -173,13 +173,13 @@ h4 {
   color: #66ef90;
 }
 
-/*.checkbox.green:hover,
+.checkbox.green:hover,
 .checkbox.green.checked,
 .checkbox.green.checked [data-icon] {
-	color: #03d343;
+  color: #03d343;
 }
 
-#modal-wrapper {
+/*#modal-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
