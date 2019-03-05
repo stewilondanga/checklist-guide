@@ -21,6 +21,211 @@
         </a>
     </div>
 
+    <header>
+      <a href="https://fontawesome.com/" target="_blank"><h3><i class="fab fa-font-awesome"></i>Font Awesome</h3></a>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-center mb-0">Custom Checklists</h1>
+    		<a id="open-modal-top" href="#" id="steps-cta"><i class="far fa-clipboard-list"></i><span class="d-none d-sm-inline">Step-by-Step </span>Guide</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 pb-0">
+          <h4 class="text-center mb-0">Standard</h4>
+        </div>
+      </div>
+      <div class="row lists">
+        <div class="col-sm-6 col-md-4 offset-md-2 list-standard">
+          <h2>Checklists</h2>
+          <label class="checkbox">One
+            <input type="checkbox" checked>
+            <i class="fas fa-check-square"></i>
+          </label>
+          <label class="checkbox">Two
+            <input type="checkbox">
+            <i class="far fa-square"></i>
+          </label>
+          <label class="checkbox">Three
+            <input type="checkbox">
+            <i class="far fa-square"></i>
+          </label>
+          <label class="checkbox">Four
+            <input type="checkbox">
+            <i class="far fa-square"></i>
+          </label>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 list-standard">
+          <h2>Radio Buttons</h2>
+          <label class="checkbox">One
+            <input type="radio" checked>
+            <i class="fas fa-dot-circle"></i>
+          </label>
+          <label class="checkbox">Two
+            <input type="radio">
+            <i class="far fa-circle"></i>
+          </label>
+          <label class="checkbox">Three
+            <input type="radio">
+            <i class="far fa-circle"></i>
+          </label>
+          <label class="checkbox">Four
+            <input type="radio">
+            <i class="far fa-circle"></i>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 pt-0 pb-0">
+          <h4 class="text-center mb-0">Custom</h4>
+        </div>
+      </div>
+      <div class="row lists">
+        <div class="col-sm-6 col-md-4 offset-md-2 list-custom">
+          <h2>Amenities</h2>
+          <label class="checkbox green">Verified hosts
+            <input type="checkbox">
+            <i class="far fa-badge-check"></i>
+          </label>
+          <label class="checkbox">Bed
+            <input type="checkbox" checked>
+            <i class="far fa-bed"></i>
+          </label>
+          <label class="checkbox">Bath
+            <input type="checkbox">
+            <i class="far fa-bath"></i>
+          </label>
+          <label class="checkbox">Outlets
+            <input type="checkbox">
+            <i class="fas fa-plug"></i>
+          </label>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 list-custom">
+          <h2>Transportation</h2>
+          <label class="checkbox">Taxi
+            <input type="radio" checked>
+            <i class="far fa-taxi"></i>
+          </label>
+          <label class="checkbox">Truck
+            <input type="radio">
+            <i class="far fa-truck"></i>
+          </label>
+          <label class="checkbox">Train
+            <input type="radio">
+            <i class="far fa-train"></i>
+          </label>
+          <label class="checkbox">Plane
+            <input type="radio">
+            <i class="far fa-plane"></i>
+          </label>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp" target="_blank" title="W3Schools How To Article"><i class="far fa-link"></i>W3Schools</a><a id="open-modal" href="#"><i class="far fa-question-circle"></i>Step-by-Step</a>
+    </footer>
+    <aside id="modal-wrapper" style="display: none;">
+      <div id="modal">
+        <div id="modal-inner">
+          <h3>A JavaScript (jQuery) Solution to Custom Checklists</h3>
+          <p>* This method assumes and requires you are using <a href="https://fontawesome.com" target="_blank" title="Font Awesome 5">Font Awesome 5</a> and have a <a href="https://fontawesome.com/pricing" target="_blank" title="Font Awesome 5 Pro">Pro license</a> for full access to all available icons and weight classes.</p>
+          <hr><br>
+          <ol>
+            <li>
+              <p>Set up an event listener for your custom lists. Make sure to target the appropriate list if you have multiple lists on the same page/form and want to use different styling for each.</p>
+              <pre><code class="javascript">$('.custom-checklist').on('click', '[type="checkbox"], [type="radio"]', function() {});</code></pre>
+            </li>
+            <li>
+              <p>Check whether the list being interacted with is a checkbox list or radio button list, and if it is a checkbox list, check whether the checkbox is being checked or unchecked.</p>
+              <pre><code class="javascript">$('.custom-checklist').on('click', '[type="checkbox"], [type="radio"]', function() {
+      if ($(this).attr('type') == 'checkbox') { // checkbox list
+        if ($(this).is(':checked')) {} // checkbox being checked
+      } else {} // checkbox being unchecked
+      else if ($(this).attr('type') == 'radio') {} // radio button list
+    });</code></pre>
+            </li>
+            <li>
+              <p>On click, if the checkbox/radio is being checked, apply the checked styling using the data-icon and data-prefix attributes on the dynamically generated SVG element for that icon. If you are using a radio button list, make sure to unstyle all sibling radio buttons within the adjacent labels, and if a checkbox is being unchecked, apply the unchecked styling the same way as checked.</p>
+              <pre><code class="javascript">$('.custom-checklist').on('click', '[type="checkbox"], [type="radio"]', function() {
+      if ($(this).attr('type') == 'checkbox') { // checkbox list
+        if ($(this).is(':checked')) { // checkbox being checked, style as checked
+          $(this).siblings('[data-icon]')
+            .attr({
+              'data-icon': 'check-square',
+              'data-prefix': 'fas'
+            })
+            .parent().addClass('checked');
+        } else { // checkbox being unchecked, style as unchecked
+          $(this).siblings('[data-icon]')
+            .attr({
+              'data-icon': 'square',
+              'data-prefix': 'far'
+            })
+            .parent().removeClass('checked');
+        }
+      } else if ($(this).attr('type') == 'radio') { // radio button list
+        $(this).siblings('[data-icon]')
+          .attr({
+            'data-icon': 'dot-circle',
+            'data-prefix': 'fas'
+          })
+          .parent()
+          .addClass('checked')
+          .siblings().each(function() {
+            $(this)
+              .removeClass('checked');
+            .children('[data-icon]')
+              .attr({
+                'data-icon': 'circle',
+                'data-prefix': 'far'
+              });
+          });
+      }
+    });</code></pre>
+            </li>
+            <li>
+              <p>If you are using Font Awesome 5's CSS solution instead of the standard JS+SVG solution, simply modify this function to work with the Font Awesome 5 classes and weights as explained in the Font Awesome 5's official CSS <a href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use" target="_blank" title="Font Awesome 5 CSS Basic Use">documentation</a></p>
+              <pre><code class="javascript">$('.custom-checklist').on('click', '[type="checkbox"], [type="radio"]', function() {
+      if ($(this).attr('type') == 'checkbox') { // checkbox list
+        if ($(this).is(':checked')) { // checkbox being checked, style as checked
+          $(this).siblings('i')
+            .removeClass('far, fa-square')
+            .addClass('fas, fa-check-square')
+            .parent().addClass('checked');
+        } else { // checkbox being unchecked, style as unchecked
+          $(this).siblings('i')
+            .removeClass('fas, fa-check-square')
+            .addClass('far, fa-square')
+            .parent().removeClass('checked');
+        }
+      } else if ($(this).attr('type') == 'radio') { // radio button list
+        $(this).siblings('i')
+          .removeClass('far, fa-circle')
+          .addClass('fas, fa-dot-circle')
+          .parent()
+          .addClass('checked')
+          .siblings().each(function() {
+            $(this)
+              .removeClass('checked');
+            .children('i')
+              .removeClass('fas, fa-dot-circle')
+              .addClass('far, fa-circle')
+          });
+      }
+    });</code></pre>
+            </li>
+            <li>
+              <p>To build a custom checklist with different icons, set the different icons in the HTML and then change the weight of the icons from fal/far to fas to fill the icon when checked or selected. Any additional stylistic customizations can be made your CSS stylesheet. For a more robust demonstration of how this code would be built out, look at and play with the JavaScript for this pen.</p>
+            </li>
+          </ol>
+          <hr>
+          <p>The web is a beautiful place if you'd only open your browser. Checklists should be no exception. Want to take it one step further? Check out Codrops article on SVG <a href="https://tympanus.net/codrops/2013/10/15/animated-checkboxes-and-radio-buttons-with-svg/" target="_blank" title="Animated Checkboxes and Radio Buttons with SVG">animated checklists</a>.</p>
+        </div>
+        <a id="close-modal" href="#"><i class="fas fa-times"></i></a>
+      </div>
+    </aside>
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
