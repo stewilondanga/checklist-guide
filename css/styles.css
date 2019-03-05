@@ -140,11 +140,11 @@ h4 {
   transition: padding-left 0.15s ease-in-out;
 }
 
-/*.checkbox:hover {
-	padding-left: 35px;
+.checkbox:hover {
+  padding-left: 35px;
 }
 
-.checkbox input {
+/*.checkbox input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
