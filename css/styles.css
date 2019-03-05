@@ -70,12 +70,12 @@ header [data-icon] {
   padding-right: 12px;
 }
 
-/*footer [data-icon], #open-modal-top [data-icon] {
-	padding-right: 8px;
-	box-sizing: content-box;
+footer [data-icon], #open-modal-top [data-icon] {
+  padding-right: 8px;
+  box-sizing: content-box;
 }
 
-.container {
+/*.container {
 	position: relative;
 	padding: 64px 15px;
 	background-color: #fff;
