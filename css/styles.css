@@ -107,9 +107,11 @@ footer [data-icon], #open-modal-top [data-icon] {
   padding: 32px;
 }
 
-/*h1 { color: #ff7502; }
+h1 {
+  color: #ff7502;
+}
 
-h2 {
+/*h2 {
 	margin-bottom: 16px;
 	font-size: 18px;
 	color: #90a4ae;
